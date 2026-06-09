@@ -793,7 +793,8 @@ footer .container{
     }
 
     .service-card img{
-        height: 330px;
+        width: 100%;
+        height: auto;
     }
 
     .service-card h2{
@@ -1027,10 +1028,12 @@ footer .container{
     .service-card{
         padding: 15px;
         margin-bottom: 20px;
+        height: auto;
     }
 
     .service-card img{
-        height: 260px;
+        width: 100%;
+        height: auto;
         border-radius: 15px;
     }
 
