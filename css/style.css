@@ -501,6 +501,16 @@ img{
     color: #000000;
 }
 
+.contact-item a{
+    font-size: 25px;
+    color: #222222;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.contact-item a:hover{
+    color: #000000;
+}
 
 .footer{
     background: linear-gradient(to right, #e5e5e5, #b8b8b8, #8f8f8f);
@@ -844,50 +854,208 @@ footer .container{
     }
 }
 
-
 @media screen and (max-width: 576px){
+
+    .home-header{
+        min-height: 100vh;
+        background-position: center;
+    }
+
+    .navbar{
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .navbar .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .logos{
+        width: 150px;
+        margin-top: 0;
+    }
+
+    .navbar-collapse{
+        background-color: rgba(0,0,0,0.75);
+        padding: 15px;
+        border-radius: 12px;
+        margin-top: 15px;
+    }
+
+    .nav-link{
+        font-size: 16px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .hero{
+        padding-top: 90px;
+        padding-bottom: 120px;
+    }
+
+    .hero .container{
+        justify-content: center;
+    }
+
+    .hero-content{
+        max-width: 100%;
+        text-align: center;
+    }
 
     .hero h1{
         font-size: 34px;
+        line-height: 1.2;
     }
 
     .hero p{
         font-size: 16px;
+        line-height: 1.5;
     }
 
     .main-btn{
         width: 100%;
         text-align: center;
         padding: 16px 20px;
+        font-size: 16px;
+    }
+
+    .about-section{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .about-img{
+        border-radius: 20px;
+        margin-bottom: 25px;
+    }
+
+    .about-info{
+        text-align: center;
+        margin-top: 0;
     }
 
     .about-info h1,
     .portfolio-section h1,
     .services-section h1{
         font-size: 34px;
+        margin-bottom: 25px;
+    }
+
+    .about-info p{
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .about-stats{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .stat-item{
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #8f8f8f;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+    }
+
+    .stat-item:last-child{
+        border-bottom: none;
+    }
+
+    .stat-item span{
+        font-size: 36px;
+    }
+
+    .stat-item p{
+        font-size: 18px;
     }
 
     .about-btn{
         width: 100%;
+        display: block;
         text-align: center;
         font-size: 18px;
         padding: 15px 18px;
     }
 
+    .portfolio-section{
+        padding-top: 25px;
+        padding-bottom: 40px;
+    }
+
+    .filter-buttons{
+        margin-bottom: 25px;
+    }
+
+    .filter-buttons button{
+        width: 100%;
+        display: block;
+        margin-bottom: 10px;
+        padding: 13px 20px;
+        font-size: 16px;
+        border-radius: 8px;
+    }
+
+    .portfolio-grid{
+        grid-template-columns: 1fr;
+    }
+
     .portfolio-grid img{
         height: 280px;
+        object-fit: cover;
+    }
+
+    .load-btn{
+        width: 100%;
+        font-size: 18px;
+        padding: 15px 20px;
+    }
+
+    .services-section{
+        padding-top: 25px;
+        padding-bottom: 40px;
+    }
+
+    .services-row{
+        margin-top: 20px;
     }
 
     .service-card{
-        padding: 18px;
+        padding: 15px;
+        margin-bottom: 20px;
     }
 
     .service-card img{
-        height: 280px;
+        height: 260px;
+        border-radius: 15px;
+    }
+
+    .service-card h2{
+        font-size: 20px;
+        margin-top: 15px;
+    }
+
+    .service-card p{
+        font-size: 18px;
+    }
+
+    .contact-section{
+        padding-top: 25px;
+        padding-bottom: 40px;
     }
 
     .contact-img{
-        height: 330px;
+        height: 300px;
+        border-radius: 20px;
+        margin-bottom: 25px;
+    }
+
+    .contact-info{
+        text-align: center;
     }
 
     .contact-info h1{
@@ -895,8 +1063,13 @@ footer .container{
     }
 
     .contact-info h2{
-        font-size: 20px;
-        margin-bottom: 28px;
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+
+    .contact-item{
+        justify-content: center;
+        margin-bottom: 22px;
     }
 
     .contact-item i{
@@ -905,24 +1078,33 @@ footer .container{
         min-width: 32px;
     }
 
+    .contact-item a,
     .contact-item span{
-        font-size: 18px;
+        font-size: 17px;
+        white-space: normal;
     }
 
     .form-group{
-        margin-bottom: 25px;
+        margin-bottom: 20px;
     }
 
     .form-group input,
     .form-group select{
-        height: 65px;
-        font-size: 18px;
-        border-radius: 14px;
+        height: 60px;
+        font-size: 16px;
+        border-radius: 12px;
+        padding: 0 18px;
     }
 
     .contact-form button{
-        font-size: 22px;
+        width: 100%;
+        font-size: 20px;
+        padding: 16px 0;
         border-radius: 14px;
+    }
+
+    .contact-social{
+        margin-top: 35px;
     }
 
     .footer-social{
